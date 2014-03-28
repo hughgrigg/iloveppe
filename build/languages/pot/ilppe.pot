@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iloveppe-blog 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-28 11:07+0800\n"
+"POT-Creation-Date: 2014-03-28 11:49+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,28 +52,12 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
+#: blog/wordpress/wp-content/themes/iloveppe/header.php:16
 #: blog/wordpress/wp-content/themes/iloveppe/header.php:17
-msgid "Home"
-msgstr ""
-
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:23
-msgid "About Us"
-msgstr ""
-
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:29
-msgid "Contact Us"
-msgstr ""
-
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:35
-msgid "Blog"
-msgstr ""
-
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:61
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:62
 msgid "I Love PPE"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:68
+#: blog/wordpress/wp-content/themes/iloveppe/header.php:23
 msgid "China PPE Industry Specialists"
 msgstr ""
 
@@ -126,4 +110,20 @@ msgstr ""
 
 #: blog/wordpress/wp-content/themes/iloveppe/partials/byline.php:8
 msgid "Published"
+msgstr ""
+
+#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:18
+msgid "Home"
+msgstr ""
+
+#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:24
+msgid "About Us"
+msgstr ""
+
+#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:30
+msgid "Contact Us"
+msgstr ""
+
+#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:36
+msgid "Blog"
 msgstr ""

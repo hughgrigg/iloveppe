@@ -10,6 +10,7 @@
     "grunt-po2mo": "*",
     "grunt-pot": "*",
     "grunt-contrib-copy": "*",
+    "grunt-text-replace": "*",
     "matchdep": "*"
   }
 }

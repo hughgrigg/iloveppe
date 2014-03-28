@@ -87,6 +87,27 @@ module.exports = function(grunt){
                     dest: 'blog/wordpress/wp-content/languages/themes/',
                     filter: 'isFile'
                 }]
+            },
+            common: {
+                files: [{
+                    src: 'build/php/top-nav.php',
+                    dest: 'app/views/partials/top-nav.blade.php',
+                    filter: 'isFile'
+                }]
+            }
+        },
+
+        replace: {
+            // Copy common top-nav.php file and convert to Wordpress functions
+            topnav: {
+                src: ['build/php/top-nav.php'],
+                dest: 'blog/wordpress/wp-content/themes/iloveppe/partials/',
+                replacements: [
+                    {
+                        from: "echo trans(",
+                        to: "_e("
+                    }
+                ]
             }
         },
 
@@ -105,8 +126,8 @@ module.exports = function(grunt){
 
     grunt.registerTask('buildcss', ['sass', 'cssmin']);
     grunt.registerTask('buildjs', ['uglify']);
-    grunt.registerTask('buildall', ['buildjs', 'buildcss']);
     grunt.registerTask('lang', ['pot', 'po2mo', 'copy']);
+    grunt.registerTask('heave', ['buildjs', 'buildcss', 'lang', 'replace']);
     grunt.registerTask('default', []);
 
 };
