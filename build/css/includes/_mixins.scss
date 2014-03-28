@@ -1,0 +1,53 @@
+@mixin scaled_headers($max, $factor) {
+    h1 {
+        font-size: $max;
+    }
+    h2 {
+        font-size: $max * $factor;
+    }
+    h3 {
+        font-size: $max * $factor * $factor;
+    }
+    h4 {
+        font-size: $max * $factor * $factor * $factor;
+    }
+    h5 {
+        font-size: $max * $factor * $factor * $factor * $factor;
+    }
+    h6 {
+        font-size: $max * $factor * $factor * $factor * $factor * $factor;
+    }
+}
+
+$onePx: 0.063em;
+$smallBp: 40em;
+$mediumBp: 64em;
+$largeBp: 90em;
+$xLargeBp: 120em;
+
+@mixin breakpoint($point) {
+    @if $point == small {
+    @media only screen and (max-width: $smallBp) { @content; }
+  }
+  
+  @else if $point == medium-down {
+    @media only screen and (max-width: $mediumBp) { @content; }
+  }
+  @else if $point == medium-only {
+    @media only screen and (min-width: $smallBp + $onePx) and (max-width: $mediumBp) { @content; }
+  }
+  @else if $point == medium-up {
+    @media (min-width: $smallBp + $onePx) { @content; }
+  }
+  
+  @else if $point == large-only {
+    @media only screen and (min-width: $mediumBp + $onePx) and (max-width: $largeBp) { @content; }
+  }
+  @else if $point == large-up {
+    @media (min-width: $mediumBp + $onePx) { @content; }
+  }
+  
+  @else if $point == xlarge-up {
+    @media (min-width: $largeBp + $onePx) { @content; }
+  }
+}

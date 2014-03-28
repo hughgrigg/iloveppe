@@ -1,0 +1,24 @@
+@import '../includes/_settings';
+
+.entry-title {
+	> a {
+		color: $textColour;
+		.icon-link {
+			opacity: 0;
+		}
+		&:hover {
+			.icon-link {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.article-data {
+    list-style-type: none;
+    margin: 1em 0;
+    li {
+        display: inline;
+        margin-right: 1em;
+    }
+}

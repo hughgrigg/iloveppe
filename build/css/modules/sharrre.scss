@@ -1,0 +1,77 @@
+@import '../includes/_settings';
+
+.sharrre-buttons {
+    list-style-type: none;
+    margin: 1em 0;
+    min-height: 24px;
+}
+
+.sharrre {
+    display: inline-block;
+    margin-right: 0.5em;
+    font-size: 0.85rem;
+}
+
+.box {
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.share {
+    color: #fff;
+    padding: 0em 1em;
+    display: inline-block;
+}
+
+.count {
+    padding: 0 1em;
+}
+
+.twitter-sharrre {
+    .box {
+        border-color: $twitterBlue;
+    }
+    .share {
+        background-color:$twitterBlue;
+    }
+    .count {
+        color: $twitterBlue;
+    }
+}
+
+.facebook-sharrre {
+    .box {
+        border-color: $facebookBlue;
+    }
+    .share {
+        background-color:$facebookBlue;
+    }
+    .count {
+        color: $facebookBlue;
+    }
+}
+
+.linkedin-sharrre {
+    .box {
+        border-color: $linkedInBlue;
+    }
+    .share {
+        background-color:$linkedInBlue;
+    }
+    .count {
+        color: $linkedInBlue;
+    }
+}
+
+.google-sharrre {
+    .box {
+        border-color: $googlePlusRed;
+    }
+    .share {
+        background-color:$googlePlusRed;
+    }
+    .count {
+        color: $googlePlusRed;
+    }
+}

@@ -1,0 +1,54 @@
+.sidebar {
+	@include breakpoint(large-up) {
+		position: absolute;
+		right: 0;
+		padding-right: 0;
+	}
+}
+
+.sidebar-items {
+	list-style-type: none;
+	margin: 0;
+}
+
+.widget {
+	margin-bottom: 2em;
+	@include breakpoint(large-up) {
+		padding: 1em;
+	}
+}
+
+.widget-title {
+	font-size: 1.5em;
+	background-color: $brandColour;
+	border-bottom: 0.1em solid darken($brandColour, 15%);
+	border-radius: $innerRadius;
+	color: #fff;
+	padding: 0.25em 0.5em;
+	position: relative;
+	@include breakpoint(large-up) {
+		border-radius: $innerRadius $innerRadius 0 $innerRadius;
+		margin-right: -1.68em;
+		margin-left: -1em;
+		&:before {
+			content: "";
+			position: absolute;
+			right: 0;
+			bottom: -1em;
+			border-left: 0.5em solid darken($brandColour, 25%);
+			border-top: 0.5em solid darken($brandColour, 25%);
+			border-right: 0.5em solid transparent;
+			border-bottom: 0.5em solid transparent;
+		}
+	}
+}
+
+.widget_recent_entries {
+	> ul {
+		list-style-type: none;
+		margin: 0;
+		> li {
+
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.posts-list {
+	list-style-type: none;
+	margin: 0;
+}
+
+.posts-list-link {
+	display: block;
+	padding: 1em;
+	border-bottom: 2px groove rgba(0,0,0,0.1);
+	border-left: 0.5em solid transparent;
+	border-right: 0.5em solid transparent;
+}

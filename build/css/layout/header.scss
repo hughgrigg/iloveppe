@@ -1,0 +1,24 @@
+@import '../includes/_settings';
+
+.header-back {
+	background-color: #fff;
+	border-bottom: 2px solid lighten($textColour, 50%);
+	padding: 1em 0;
+	z-index: 50;
+}
+
+.header-row {
+	.columns {
+		text-align: center;
+	}
+}
+
+.site-description {
+	font-size: 1.8em;
+	margin: 0.3em;
+	color: lighten($textColour, 20%);
+	@include breakpoint(large-up) {
+		font-size: 2.3em;
+		margin: auto;
+	}
+}

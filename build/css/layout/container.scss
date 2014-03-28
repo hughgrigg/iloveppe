@@ -1,0 +1,14 @@
+@import '../includes/_settings';
+
+.container {
+	z-index: 1;
+	background-color: #fff;
+	padding: 1em;
+	position: relative;
+	@include breakpoint(medium-up) {
+		padding: 2em;
+	}
+	@include breakpoint(large-up) {
+		box-shadow: 0 15px 15px rgba(0,0,0,0.2);
+	}
+}

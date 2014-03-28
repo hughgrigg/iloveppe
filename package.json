@@ -1,0 +1,15 @@
+{
+  "name": "iloveppe-blog",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-po2mo": "*",
+    "grunt-pot": "*",
+    "grunt-contrib-copy": "*",
+    "matchdep": "*"
+  }
+}
