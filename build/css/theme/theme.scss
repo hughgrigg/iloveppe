@@ -1,1 +1,8 @@
 @import '../includes/_settings';
+
+button, .button {
+	background-color: $brandColour;
+	&:hover {
+		background-color: lighten($brandColour, 10%);
+	}
+}
