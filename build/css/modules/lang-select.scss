@@ -29,7 +29,7 @@
 		border-color: #fff;
 		color: #fff;
 	}
-	&.current {
+	&.current, &:active {
 		color: #000;
 		background-color: lighten($brandColour, 30%);
 		border-color: lighten($brandColour, 30%);

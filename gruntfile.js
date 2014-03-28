@@ -10,7 +10,7 @@ module.exports = function(grunt){
         cssmin: {
             build: {
                 src: 'static/css/iloveppe.css',
-                dest: 'static/css/iloveppe.css'
+                dest: 'static/css/iloveppe.min.css'
             }
         },
 
@@ -88,24 +88,27 @@ module.exports = function(grunt){
                     filter: 'isFile'
                 }]
             },
-            common: {
-                files: [{
-                    src: 'build/php/top-nav.php',
-                    dest: 'app/views/partials/top-nav.blade.php',
-                    filter: 'isFile'
-                }]
-            }
         },
 
         replace: {
             // Copy common top-nav.php file and convert to Wordpress functions
-            topnav: {
+            topnav_wordpress: {
                 src: ['build/php/top-nav.php'],
                 dest: 'blog/wordpress/wp-content/themes/iloveppe/partials/',
                 replacements: [
                     {
-                        from: "echo trans(",
-                        to: "_e("
+                        from: /#trans:([a-z]+\.[a-z]+),(.*?)#/g,
+                        to: "<?php _e('$2', 'ilppe') ?>"
+                    }
+                ]
+            },
+            topnav_laravel: {
+                src: ['build/php/top-nav.php'],
+                dest: 'app/app/views/partials/top-nav.blade.php',
+                replacements: [
+                    {
+                        from: /#trans:([a-z]+\.[a-z]+),(.*?)#/g,
+                        to: "{{ echo trans('$1') }}"
                     }
                 ]
             }

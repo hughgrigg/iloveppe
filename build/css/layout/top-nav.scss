@@ -33,6 +33,11 @@
 		color: #fff;
 	}
 
+	@include breakpoint(small) {
+		& > span {
+			display: none;
+		}
+	}
 	@include breakpoint(medium-up) {
 		border-right: 2px groove rgba(0, 0, 0, 0.1);
 	}

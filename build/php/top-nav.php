@@ -1,11 +1,10 @@
 <?php
 
 // This is the website top-nav that is common across the Wordpress and Laravel apps
-// Grunt copies this file into the Wordpress app
-// Grunt then converts Laravel's trans() into Wordpress' __()
-// Grunt also copies this file as-is for Laravel with the extension .blade.php
+// Grunt copies and converts this file into the two apps
+// TThe #trans:{laravel},{wordpress}# tags are converted into Laravel's trans() into Wordpress' __()
 // Only edit this file in build/php
-// Not very elegant but it keeps things DRY
+// Not very elegant but it keeps things DRY!
 
 ?>
 
@@ -15,25 +14,25 @@
 			<ul class="medium-block-grid-4 small-block-grid-2 top-nav">
 				<li class="top-nav-item">
 					<a class="top-nav-link" href="//www.iloveppe.com/">
-						<?php echo trans('Home', 'ilppe') ?><br />
+						#trans:pages.home,Home#<br />
 						<span class="icon-home"></span>
 					</a>
 				</li>
 				<li class="top-nav-item">
 					<a class="top-nav-link" href="//www.iloveppe.com/about-us">
-						<?php echo trans('About Us', 'ilppe') ?><br />
+						#trans:pages.aboutus,About Us#<br />
 						<span class="icon-user"></span>
 					</a>
 				</li>
 				<li class="top-nav-item">
 					<a class="top-nav-link" href="//www.iloveppe.com/contact-us">
-						<?php echo trans('Contact Us', 'ilppe') ?><br />
+						#trans:pages.contactus,Contact Us#<br />
 						<span class="icon-bubbles"></span>
 					</a>
 				</li>
 				<li class="top-nav-item">
 					<a class="top-nav-link" href="//blog.iloveppe.com/">
-						<?php echo trans('Blog', 'ilppe') ?><br />
+						#trans:pages.blog,Blog#<br />
 						<span class="icon-file"></span>
 					</a>
 				</li>

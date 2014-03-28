@@ -11,10 +11,7 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::controller('/', 'HomeController');
 
 Route::get('companies/index', [
         'as' => 'companies/index',
