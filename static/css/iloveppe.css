@@ -4921,10 +4921,10 @@ label.error {
   font-weight: 400;
   src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/y7lebkjgREBJK96VQi37ZobN6UDyHWBl620a-IRfuBk.woff) format("woff"); }
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'Source Sans Pro';
   font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), url(http://themes.googleusercontent.com/static/fonts/robotoslab/v3/dazS1PrQQuCxC3iOAJFEJTqR_3kx9_hJXbbyU8S6IN0.woff) format("woff"); }
+  font-weight: 400;
+  src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlBM0YzuT7MdOe03otPbuUS0.woff) format("woff"); }
 html {
   font-size: 18px;
   color: #333333;
@@ -4956,6 +4956,13 @@ a {
     .container {
       box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2); } }
 
+.home-container {
+  background-image: url(../img/ilppe-home-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 1em 0 0 0;
+  min-height: 900px; }
+
 .header-back {
   background-color: #fff;
   border-bottom: 2px solid #b3b3b3;
@@ -4966,13 +4973,8 @@ a {
   text-align: center; }
 
 .site-description {
-  font-size: 1.8em;
-  margin: 0.3em;
+  font-size: 1.5em;
   color: #666666; }
-  @media (min-width: 64.063em) {
-    .site-description {
-      font-size: 2.3em;
-      margin: auto; } }
 
 .top-nav-back {
   background-color: #e73434;
@@ -5158,3 +5160,26 @@ article {
     background-color: #f7bdbd;
     border-color: #f7bdbd;
     border-style: inset; }
+
+.hero {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.5em;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5); }
+  @media (min-width: 64.063em) {
+    .hero {
+      font-size: 4em; } }
+
+.dark-bg {
+  color: #fff; }
+
+.hero-box {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5em; }
+  .hero-box.right {
+    border-radius: 18px 0 0 18px; }
+  .hero-box.left {
+    border-radius: 0 18px 18px 0; }
+  .hero-box p, .hero-box li {
+    font-size: larger;
+    font-family: "Source Sans Pro", sans-serif; }

@@ -13,7 +13,9 @@
 
     @include('partials.top-nav')
 
-    @yield('content')
+    <div class="row container @yield('containerClass')">
+      @yield('content')
+    </div>
 
     {{ AssetHelper::script('iloveppe.min.js') }}
   </body>

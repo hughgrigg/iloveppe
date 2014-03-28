@@ -1,0 +1,30 @@
+@import '../includes/_settings';
+
+.hero {
+	display: block;
+	text-align: center;
+	margin-bottom: 0.5em;
+	text-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+	@include breakpoint(large-up) {
+		font-size: 4em;
+	}
+}
+
+.dark-bg {
+	color: #fff;
+}
+
+.hero-box {
+	background-color: rgba(0,0,0,0.7);
+	padding: 1.5em;
+	&.right {
+		border-radius: $outerRadius 0 0 $outerRadius;
+	}
+	&.left {
+		border-radius: 0 $outerRadius $outerRadius 0;
+	}
+	p, li {
+		font-size: larger;
+		font-family: $bodyFont;
+	}
+}

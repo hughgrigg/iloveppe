@@ -17,7 +17,10 @@
           <img src="<?php echo STATIC_URI ?>img/i-heart-ppe-inline.png" alt="<?php _e('I Love PPE', 'ilppe') ?>" />
         </a>
       </div>
-      <div class="medium-8 columns">
+      <div class="medium-4 columns">
+        <h3 class="site-description"><?php _e('Blog', 'ilppe') ?></h3>
+      </div>
+      <div class="medium-4 columns">
 
         <h3 class="site-description">
           <?php _e('China PPE Industry Specialists', 'ilppe'); ?><br />

@@ -1,11 +1,10 @@
 <?php
 
 // This is the website top-nav that is common across the Wordpress and Laravel apps
-// Grunt copies this file into the Wordpress app
-// Grunt then converts Laravel's trans() into Wordpress' __()
-// Grunt also copies this file as-is for Laravel with the extension .blade.php
+// Grunt copies and converts this file into the two apps
+// TThe #trans:{laravel},{wordpress}# tags are converted into Laravel's trans() into Wordpress' __()
 // Only edit this file in build/php
-// Not very elegant but it keeps things DRY
+// Not very elegant but it keeps things DRY!
 
 ?>
 
@@ -14,26 +13,26 @@
 		<div class="medium-11 columns padless">
 			<ul class="medium-block-grid-4 small-block-grid-2 top-nav">
 				<li class="top-nav-item">
-					<a class="top-nav-link" href="//www.iloveppe.com/">
-						{{ echo trans('pages.home') }}<br />
+					<a class="top-nav-link" href="//www.iloveppe.dev/">
+						{{ trans('pages.home') }}<br />
 						<span class="icon-home"></span>
 					</a>
 				</li>
 				<li class="top-nav-item">
-					<a class="top-nav-link" href="//www.iloveppe.com/about-us">
-						{{ echo trans('pages.aboutus') }}<br />
+					<a class="top-nav-link" href="//www.iloveppe.dev/about-us">
+						{{ trans('pages.aboutus') }}<br />
 						<span class="icon-user"></span>
 					</a>
 				</li>
 				<li class="top-nav-item">
-					<a class="top-nav-link" href="//www.iloveppe.com/contact-us">
-						{{ echo trans('pages.contactus') }}<br />
+					<a class="top-nav-link" href="//www.iloveppe.dev/contact-us">
+						{{ trans('pages.contactus') }}<br />
 						<span class="icon-bubbles"></span>
 					</a>
 				</li>
 				<li class="top-nav-item">
-					<a class="top-nav-link" href="//blog.iloveppe.com/">
-						{{ echo trans('pages.blog') }}<br />
+					<a class="top-nav-link" href="//blog.iloveppe.dev/">
+						{{ trans('pages.blog') }}<br />
 						<span class="icon-file"></span>
 					</a>
 				</li>
@@ -42,12 +41,12 @@
 		<div class="medium-1 columns padless">
 			<ul class="lang-select">
 				<li class="lang-select-item">
-					<a href="<?php ilppe_lang_link('zh'); ?>" title="看中文版" class="lang-link <?php ilppe_is_current_lang('zh') ?>">
+					<a href="{{ LangHelper::langLink('zh') }}" title="看中文版" class="lang-link {{ LangHelper::isLang('zh') }}">
 						汉
 					</a>
 				</li>
 				<li class="lang-select-item">
-					<a href="<?php ilppe_lang_link('en'); ?>" title="View in English" class="lang-link <?php ilppe_is_current_lang('en') ?>">
+					<a href="{{ LangHelper::langLink('en') }}" title="View in English" class="lang-link {{ LangHelper::isLang('en') }}">
 						En
 					</a>
 				</li>

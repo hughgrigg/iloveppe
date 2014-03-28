@@ -20,4 +20,14 @@ class HomeController extends BaseController {
 		return View::make('pages.home');
 	}
 
+	public function getAboutUs()
+	{
+		return View::make('pages.about-us');
+	}
+
+	public function getContactUs()
+	{
+		return View::make('pages.contact-us');
+	}
+
 }

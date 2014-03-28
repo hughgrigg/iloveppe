@@ -14,11 +14,6 @@
 }
 
 .site-description {
-	font-size: 1.8em;
-	margin: 0.3em;
+	font-size: 1.5em;
 	color: lighten($textColour, 20%);
-	@include breakpoint(large-up) {
-		font-size: 2.3em;
-		margin: auto;
-	}
 }

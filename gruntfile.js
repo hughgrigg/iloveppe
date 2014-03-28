@@ -35,6 +35,12 @@ module.exports = function(grunt){
                         'build/js/foundation/foundation.js',
                         'build/js/vendor/jquery.sharrre.min.js',
                         'build/js/ilppe_blog.js'
+                    ],
+                    'static/js/iloveppe.min.js': [
+                        'build/js/vendor/jquery.js',
+                        'build/js/foundation/foundation.js',
+                        'build/js/vendor/jquery.sharrre.min.js',
+                        'build/js/ilppe.js'
                     ]
                 }
             }
@@ -108,7 +114,16 @@ module.exports = function(grunt){
                 replacements: [
                     {
                         from: /#trans:([a-z]+\.[a-z]+),(.*?)#/g,
-                        to: "{{ echo trans('$1') }}"
+                        to: "{{ trans('$1') }}"
+                    },
+                    {
+                        from: /<\?php ilppe_is_current_lang\(('[a-z]{2}')\) \?>/g,
+                        to: "{{ LangHelper::isLang($1) }}"
+                    }
+                    ,
+                    {
+                        from: /<\?php ilppe_lang_link\(('[a-z]{2}')\) \?>/g,
+                        to: "{{ LangHelper::langLink($1) }}"
                     }
                 ]
             }

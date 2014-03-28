@@ -1,5 +1,7 @@
 <?php
 
+// This needs setting up as a facade
+
 class AssetHelper 
 {
 
@@ -15,33 +17,41 @@ class AssetHelper
 	}
 
 	/**
-	 * Echoes <link> tag for stylesheet
-	 * @param  string $path path to stylesheet relative to static domain css folder
+	 * Returns <link> tag for stylesheet
+	 * @param  string $filename path to stylesheet relative to static domain css folder
 	 * @return void
 	 */
-	public static function stylesheet($path)
+	public static function stylesheet($filename)
 	{
 		$linkTag = '<link rel="stylesheet" type="text/css" href="';
-		$linkTag .= '//static.iloveppe.dev/'.'css/'.$path;
+		$linkTag .= '//static.iloveppe.dev/css/'.$filename;
 		$linkTag .= '">';
-		echo $linkTag;
+		return $linkTag;
 	}
 
 	/**
-	 * Echoes <script> tag for JS
-	 * @param  string  $path  path to JS file relative to static domain js folder
+	 * Returns <script> tag for JS
+	 * @param  string  $filename  path to JS file relative to static domain js folder
 	 * @param  boolean $async whether the script should load async
 	 * @return void
 	 */
-	public static function script($path, $async = true)
+	public static function script($filename, $async = true)
 	{
 		$scriptTag = '<script ';
 		if ($async) {
 			$scriptTag .= 'async';
 		}
 		$scriptTag .= ' src="';
-		$scriptTag .= '//static.iloveppe.dev/'.'css/'.$path;
+		$scriptTag .= '//static.iloveppe.dev/js/'.$filename;
 		$scriptTag .= '"></script>';
-		echo $scriptTag;
+		return $scriptTag;
+	}
+
+	public static function image($filename)
+	{
+		$imgTag = '<img src="';
+		$imgTag .= '//static.iloveppe.dev/img/'.$filename;
+		$imgTag .= '" />';
+		return $imgTag;
 	}
 }
