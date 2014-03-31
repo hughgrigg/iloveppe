@@ -5,4 +5,7 @@ button, .button {
 	&:hover {
 		background-color: lighten($brandColour, 10%);
 	}
+	&:active {
+		background-color: darken($brandColour, 10%);	
+	}
 }

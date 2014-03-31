@@ -284,3 +284,5 @@ button, .button {
   background-color: #e73434; }
   button:hover, .button:hover {
     background-color: #ec6262; }
+  button:active, .button:active {
+    background-color: #cf1919; }

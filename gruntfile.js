@@ -132,7 +132,7 @@ module.exports = function(grunt){
     grunt.registerTask('buildcss', ['sass', 'cssmin']);
     grunt.registerTask('buildjs', ['uglify']);
     grunt.registerTask('lang', ['pot', 'po2mo', 'copy']);
-    grunt.registerTask('heave', ['buildjs', 'buildcss', 'lang', 'replace']);
+    grunt.registerTask('heave', ['buildjs', 'buildcss', 'lang']);
     grunt.registerTask('default', []);
 
 };
