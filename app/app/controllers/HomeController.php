@@ -30,4 +30,9 @@ class HomeController extends BaseController {
 		return View::make('pages.contact-us');
 	}
 
+	public function getBlog()
+	{
+		return View::make('pages.blog');	
+	}
+
 }

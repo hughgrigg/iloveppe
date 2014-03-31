@@ -1,0 +1,8 @@
+<?php
+
+return array(
+	'title' => 'About I ❤ PPE™',
+	'intro' => 'I ❤ PPE™ is an information and consulting service for the PPE industry in Mainland China. We offer a wide range of customised services for PPE and related industries in Mainland China, including:',
+	'list' => '<li>PPE Supplier Sourcing - identify and research potential PPE suppliers.</li><li>Supplier Risk Analysis - perform due diligence on potential or existing suppliers and partners.</li><li>Quality Assurance Audits - determine if your supplier is a quality manufacturer.</li><li>Cargo Inspections - check your goods before they arrive.</li><li>Quality Control Consulting - develop your China QC management program.</li><li>Tailored On-Site Auditing - address your particular concerns about quality, environment, CSR and compliance .</li><li>Expo Representation - be seen at China&#8217;s massive PPE trade shows.</li><li>Product Testing - locate Chinese testing laboratories accredited to test your PPE.</li><li>Supplier Management - we can help liaise with and manage your suppliers.</li><li>Market Knowledge - understand and develop opportunities in China&#8217;s huge PPE market.</li><li>Product Certification - we can help you certify your PPE product to the standard you require.</li><li>Customised Consulting - ask us today.</li>',
+	'welcome-contact' => 'Should your business need any assistance we would welcome the opportunity to discuss further with you. Email us today at <a href="mailto:info@iloveppe.com">info@iloveppe.com</a>.',
+);

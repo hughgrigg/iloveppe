@@ -26,8 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('Vostro-3460'),
-	'production' => array()
+	'local' => array('Vostro-3460')
 
 ));
 

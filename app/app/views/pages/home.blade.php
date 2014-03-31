@@ -20,9 +20,10 @@
 			</div>
 		</section>
 
+		<?php /*
 		<section class="home-section light-bg">
 			<h2>China PPE Sourcing</h2>
-		</section>
+		</section> */ ?>
 
 	</div>
 

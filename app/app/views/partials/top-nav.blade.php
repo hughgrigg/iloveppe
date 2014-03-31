@@ -35,7 +35,7 @@
 					</a>
 				</li>
 				<li class="top-nav-item">
-					<a class="top-nav-link" href="//blog.iloveppe.dev">
+					<a class="top-nav-link" href="{{ Localisr::localizeURL('/blog') }}">
 						{{ trans('pages.blog') }}<br />
 						<span class="icon-file"></span>
 					</a>
