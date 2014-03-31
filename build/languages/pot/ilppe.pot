@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iloveppe-blog 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-03-31 10:59+0800\n"
+"POT-Creation-Date: 2014-03-31 13:00+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgid "I Love PPE"
 msgstr ""
 
 #: blog/wordpress/wp-content/themes/iloveppe/header.php:21
-#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:38
+#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:36
 msgid "Blog"
 msgstr ""
 
@@ -117,14 +117,14 @@ msgstr ""
 msgid "Published"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:20
+#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:18
 msgid "Home"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:26
+#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:24
 msgid "About Us"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:32
+#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:30
 msgid "Contact Us"
 msgstr ""

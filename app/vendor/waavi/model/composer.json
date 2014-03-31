@@ -1,0 +1,22 @@
+{
+    "name": "waavi/model",
+    "description": "Eloquent models with auto validation on save and update.",
+    "authors": [
+        {
+            "name": "Waavi",
+            "email": "info@waavi.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "4.x"
+    },
+    "autoload": {
+        "classmap": [
+        ],
+        "psr-0": {
+            "Waavi\\Model": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}

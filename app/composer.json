@@ -7,8 +7,13 @@
 		"laravel/framework": "4.1.*",
                 "fzaninotto/faker": "dev-master",
                 "way/generators": "dev-master",
-                "mcamara/laravel-localization": "0.13.*"
+                "mcamara/laravel-localization": "0.13.*",
+                "waavi/translation": "*"
 	},
+	"repositories": [{
+		"type": "vcs",
+		"url":  "git@github.com:Waavi/translation.git"
+	}],
 	"autoload": {
 		"classmap": [
 			"app/commands",
@@ -35,5 +40,5 @@
 	"config": {
 		"preferred-install": "dist"
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "dev"
 }

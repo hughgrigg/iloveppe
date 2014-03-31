@@ -8,17 +8,13 @@
 
 ?>
 
-<div class="top-nav-back">
+<div class="top-nav-back hide-for-small">
 	<nav class="row">
-		<div class="medium-1 columns padless site-logo">
-			<a href="//www.iloveppe.dev" title="I ❤ PPE: China PPE Industry Experts">
-				<img src="//static.iloveppe.dev/img/i-heart-ppe-white-bg-128.png" alt="I ❤ PPE" />
-			</a>
-		</div>
-		<div class="medium-10 columns padless">
-			<ul class="medium-block-grid-4 small-block-grid-2 top-nav">
+		<div class="medium-12 columns padless">
+			<ul class="medium-block-grid-5 small-block-grid-2 top-nav">
 				<li class="top-nav-item">
-					<a class="top-nav-link" href="//www.iloveppe.dev/">
+					<a class="top-nav-link" href="//www.iloveppe.dev/" title="I ❤ PPE: China PPE Industry Experts">
+							<img src="//static.iloveppe.dev/img/i-heart-ppe-white-bg-128.png" alt="I ❤ PPE" class="site-logo" />
 						{{ trans('pages.home') }}<br />
 						<span class="icon-home"></span>
 					</a>
@@ -41,19 +37,19 @@
 						<span class="icon-file"></span>
 					</a>
 				</li>
-			</ul>
-		</div>
-		<div class="medium-1 columns padless">
-			<ul class="lang-select">
-				<li class="lang-select-item">
-					<a href="{{ LangHelper::langLink('zh') }}" title="看中文版" class="lang-link {{ LangHelper::isLang('zh') }}">
-						汉
-					</a>
-				</li>
-				<li class="lang-select-item">
-					<a href="{{ LangHelper::langLink('en') }}" title="View in English" class="lang-link {{ LangHelper::isLang('en') }}">
-						En
-					</a>
+				<li class="top-nav-item">
+					<ul class="lang-select">
+						<li class="lang-select-item">
+							<a href="{{ LangHelper::langLink('zh') }}" title="看中文版" class="lang-link {{ LangHelper::isLang('zh') }}">
+								汉
+							</a>
+						</li>
+						<li class="lang-select-item">
+							<a href="{{ LangHelper::langLink('en') }}" title="View in English" class="lang-link {{ LangHelper::isLang('en') }}">
+								En
+							</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</div>

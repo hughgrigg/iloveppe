@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'url' => 'http://localhost',
+	'url' => 'http://www.iloveppe.dev',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -102,11 +102,12 @@ return array(
 		'Illuminate\Auth\Reminders\ReminderServiceProvider',
 		'Illuminate\Database\SeedServiceProvider',
 		'Illuminate\Session\SessionServiceProvider',
-		'Illuminate\Translation\TranslationServiceProvider',
+		'Waavi\Translation\TranslationServiceProvider', // Illuminate Translation replaced with Waavi Translation
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-                'Way\Generators\GeneratorsServiceProvider'
+        'Way\Generators\GeneratorsServiceProvider',
+        'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider'
 
 	),
 
@@ -173,6 +174,7 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
+		'Localise'        => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization'
 
 	),
 

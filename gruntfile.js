@@ -9,15 +9,25 @@ module.exports = function(grunt){
 
         cssmin: {
             build: {
-                src: 'static/css/iloveppe.css',
-                dest: 'static/css/iloveppe.min.css'
+                options: {
+                    banner: '/* I LOVE PPE */'
+                },
+                files: {
+                    'static/css/iloveppe.min.css': [
+                        'build/foundation/css/normalize.css',
+                        'build/foundation/css/foundation.css',
+                        'build/icomoon/style.css',
+                        'build/css/google-fonts.css',
+                        'build/tmp/iloveppe.css'
+                    ]
+                }
             }
         },
 
         sass: {
             build: {
                 files: {
-                    'static/css/iloveppe.css': 'build/css/master.scss'
+                    'build/tmp/iloveppe.css': 'build/scss/master.scss'
                 }
             }
         },
@@ -30,16 +40,19 @@ module.exports = function(grunt){
             },
             build: {
                 files: {
-                    'static/js/iloveppe_blog.min.js': [
-                        'build/js/vendor/jquery.js',
+                    'build/tmp/iloveppe_common.min.js': [
+                        'build/foundation/js/vendor/modernizr.js',
+                        'build/foundation/js/vendor/jquery.js',
+                        'build/foundation/js/vendor/fastclick.js',
                         'build/js/foundation/foundation.js',
-                        'build/js/vendor/jquery.sharrre.min.js',
+                        'build/sharrre/jquery.sharrre.js',
+                    ],
+                    'static/js/iloveppe_blog.min.js': [
+                        'build/tmp/iloveppe_common.min.js',
                         'build/js/ilppe_blog.js'
                     ],
                     'static/js/iloveppe.min.js': [
-                        'build/js/vendor/jquery.js',
-                        'build/js/foundation/foundation.js',
-                        'build/js/vendor/jquery.sharrre.min.js',
+                        'build/tmp/iloveppe_common.min.js',
                         'build/js/ilppe.js'
                     ]
                 }
@@ -94,6 +107,24 @@ module.exports = function(grunt){
                     filter: 'isFile'
                 }]
             },
+            sharrre: {
+                files: [
+                    {
+                        src: 'build/sharrre/sharrre.php',
+                        dest: 'blog/wordpress/wp-content/themes/iloveppe/vendor/sharrre.php'
+                    },
+                    {
+                        src: 'build/sharrre/sharrre.php',
+                        dest: 'app/public/vendor/sharrre.php'
+                    }
+                ]
+            },
+            icomoon: {
+                files: {
+                    src: 'build/icomoon/fonts/*.*',
+                    dest: 'static/css/fonts/*.*'
+                }
+            }
         },
 
         replace: {
