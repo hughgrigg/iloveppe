@@ -4987,11 +4987,15 @@ a {
   .top-nav-back:hover {
     border-bottom-color: #a21313; }
 
+@media (min-width: 40.063em) {
+  .top-nav-columns {
+    max-height: 70px; } }
+
 .top-nav-item {
   padding: 0 !important; }
   @media (min-width: 40.063em) {
-    .top-nav-item:first-child .top-nav-link {
-      border-left: 2px groove rgba(0, 0, 0, 0.1); } }
+    .top-nav-item:last-child .top-nav-link {
+      border-right: none; } }
 
 .top-nav-link {
   display: block;
@@ -5008,6 +5012,9 @@ a {
   @media (min-width: 40.063em) {
     .top-nav-link {
       border-right: 2px groove rgba(0, 0, 0, 0.1); } }
+
+.site-logo {
+  max-width: 70px; }
 
 article {
   max-width: 38em;

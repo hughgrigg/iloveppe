@@ -10,7 +10,12 @@
 
 <div class="top-nav-back">
 	<nav class="row">
-		<div class="medium-11 columns padless">
+		<div class="medium-1 columns padless site-logo">
+			<a href="//www.iloveppe.dev" title="I ❤ PPE: China PPE Industry Experts">
+				<img src="//static.iloveppe.dev/img/i-heart-ppe-white-bg-128.png" alt="I ❤ PPE" />
+			</a>
+		</div>
+		<div class="medium-10 columns padless">
 			<ul class="medium-block-grid-4 small-block-grid-2 top-nav">
 				<li class="top-nav-item">
 					<a class="top-nav-link" href="//www.iloveppe.dev/">

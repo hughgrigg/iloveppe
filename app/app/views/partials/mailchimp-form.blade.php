@@ -2,6 +2,7 @@
 <div id="mc_embed_signup" class="dark-bg">
 <form action="http://senlinx.us6.list-manage1.com/subscribe/post?u=507ecdf17b&amp;id=f52aa3959b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 	<h3>{{ trans('home.subscribe-title') }}</h3>
+    <p>{{ trans('home.subscribe-message') }}</p>
 <div class="mc-field-group">
 	<label for="mce-EMAIL">{{ trans('home.email-address') }}
 </label>

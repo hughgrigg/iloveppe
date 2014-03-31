@@ -3,6 +3,7 @@
 return array(
 	'title' => 'China PPE Industry Experts',
 	'subscribe-title' => 'Succeed in China PPE',
+	'subscribe-message' => 'Sign up for email updates on succeeding in the China PPE industry.',
 	'intro' => 'I ❤ PPE&trade; is your source of expertise on the Personal Protective Equipment industry in China.',
 	'email-address' => 'Email address',
 	'subscribe' => 'Subscribe',
