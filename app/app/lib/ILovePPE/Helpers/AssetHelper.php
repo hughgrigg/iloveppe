@@ -1,13 +1,15 @@
 <?php
 
-// This needs setting up as a facade
+namespace ILovePPE\Helpers;
+use App;
 
-class AssetHelper 
+class AssetHelper
 {
-
 	protected $staticDomain;
 
 	public function __construct() {
+		// This needs to be changed allow App dependency injection
+		// Also should use app config domains based on environment, not hard-code them
 		// Set static domain based on environment
 		if (App::environment('local')) {
 			$this->staticDomain = '//static.iloveppe.dev/';
@@ -21,10 +23,10 @@ class AssetHelper
 	 * @param  string $filename path to stylesheet relative to static domain css folder
 	 * @return void
 	 */
-	public static function stylesheet($filename)
+	public function stylesheet($filename)
 	{
 		$linkTag = '<link rel="stylesheet" type="text/css" href="';
-		$linkTag .= '//static.iloveppe.dev/css/'.$filename;
+		$linkTag .= $this->staticDomain .'/css/'.$filename;
 		$linkTag .= '">';
 		return $linkTag;
 	}
@@ -35,23 +37,27 @@ class AssetHelper
 	 * @param  boolean $async whether the script should load async
 	 * @return void
 	 */
-	public static function script($filename, $async = true)
+	public function script($filename, $async = true)
 	{
 		$scriptTag = '<script ';
 		if ($async) {
 			$scriptTag .= 'async';
 		}
 		$scriptTag .= ' src="';
-		$scriptTag .= '//static.iloveppe.dev/js/'.$filename;
+		$scriptTag .= $this->staticDomain.'/js/'.$filename;
 		$scriptTag .= '"></script>';
 		return $scriptTag;
 	}
 
-	public static function image($filename)
+	public function image($filename, $attributes = [])
 	{
 		$imgTag = '<img src="';
-		$imgTag .= '//static.iloveppe.dev/img/'.$filename;
-		$imgTag .= '" />';
+		$imgTag .= $this->staticDomain.'/img/'.$filename;
+		$imgTag .= '" ';
+		foreach ($attributes as $attribute => $value) {
+			$imgTag .= $attribute.'="'.$value.'" ';
+		}
+		$imgTag .= '/>';
 		return $imgTag;
 	}
 }

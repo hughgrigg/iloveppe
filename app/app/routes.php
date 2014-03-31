@@ -11,14 +11,15 @@
 |
 */
 
-Route::controller('/', 'HomeController');
-
-Route::get('companies/index', [
-        'as' => 'companies/index',
-        'uses' => 'CompanyController@indexAction'
-]);
-
-Route::get('companies/locations', [
-        'as' => 'companies/locations',
-        'uses' => 'CompanyController@locationsAction'
-]);
+Route::group(
+	[
+		'prefix' => Localisr::setLocale(),
+		'before' => [
+			'LaravelLocalizationRedirectFilter',
+			'LaravelLocalizationRoutes'
+		]
+	],
+	function() {
+		Route::controller('/', 'HomeController');
+	}
+);

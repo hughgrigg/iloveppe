@@ -94,8 +94,10 @@ function ilppe_lang_redirect($lang) {
     exit;
 }
 
-function ilppe_lang_link($lang) {
-    echo add_query_arg('hl', $lang);
+function ilppe_lang_link($link = null, $lang = null) {
+    if (!$link) { $link = $_SERVER[REQUEST_URI]; }
+    if (!$lang) { $link = $_SESSION['lang']; }
+    echo add_query_arg('hl', $lang, $link);
 }
 
 function ilppe_is_current_lang($lang)

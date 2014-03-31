@@ -13,10 +13,7 @@
 
 App::before(function($request)
 {
-	$supportedLangs = ['en', 'zh'];
-	if (in_array(Input::get('hl'), $supportedLangs)) {
-		App::setLocale(Input::get('hl'));
-	}
+	//
 });
 
 

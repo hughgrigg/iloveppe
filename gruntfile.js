@@ -122,52 +122,8 @@ module.exports = function(grunt){
             icomoon: {
                 files: {
                     src: 'build/icomoon/fonts/*.*',
-                    dest: 'static/css/fonts/*.*'
+                    dest: 'static/css/fonts/'
                 }
-            }
-        },
-
-        replace: {
-            // Copy common top-nav.php file and convert to Wordpress functions
-            topnav_wordpress: {
-                src: ['build/php/top-nav.php'],
-                dest: 'blog/wordpress/wp-content/themes/iloveppe/partials/',
-                replacements: [
-                    {
-                        from: /#trans:([a-z]+\.[a-z]+),(.*?)#/g,
-                        to: "<?php _e('$2', 'ilppe') ?>"
-                    }
-                ]
-            },
-            topnav_laravel: {
-                src: ['build/php/top-nav.php'],
-                dest: 'app/app/views/partials/top-nav.blade.php',
-                replacements: [
-                    {
-                        from: /#trans:([a-z]+\.[a-z]+),(.*?)#/g,
-                        to: "{{ trans('$1') }}"
-                    },
-                    {
-                        from: /<\?php ilppe_is_current_lang\(('[a-z]{2}')\) \?>/g,
-                        to: "{{ LangHelper::isLang($1) }}"
-                    }
-                    ,
-                    {
-                        from: /<\?php ilppe_lang_link\(('[a-z]{2}')\) \?>/g,
-                        to: "{{ LangHelper::langLink($1) }}"
-                    }
-                ]
-            }
-        },
-
-        watch: {
-            js: {
-                files: ['build/js/**/*.js'],
-                tasks: ['uglify']
-            },
-            css: {
-                files: ['build/css/**/*.scss'],
-                tasks: ['buildcss']
             }
         },
 

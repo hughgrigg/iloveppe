@@ -107,7 +107,8 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
-        'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider'
+        'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
+        'ILovePPE\ILovePPEServiceProvider'
 
 	),
 
@@ -174,7 +175,9 @@ return array(
 		'URL'             => 'Illuminate\Support\Facades\URL',
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
-		'Localise'        => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization'
+		'Localisr'        => 'Mcamara\LaravelLocalization\Facades\LaravelLocalization',
+		'Asset'           => 'ILovePPE\Facades\AssetHelperFacade',
+		'Markup'          => 'ILovePPE\Facades\MarkupHelperFacade',
 
 	),
 

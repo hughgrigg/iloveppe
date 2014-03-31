@@ -26,13 +26,13 @@
 					</a>
 				</li>
 				<li class="top-nav-item">
-					<a class="top-nav-link" href="//www.iloveppe.dev/contact-us">
+					<a class="top-nav-link" href="<?php ilppe_lang_link('/contact-us', null) ?>">
 						<?php _e('Contact Us', 'ilppe') ?><br />
 						<span class="icon-bubbles"></span>
 					</a>
 				</li>
 				<li class="top-nav-item">
-					<a class="top-nav-link" href="//blog.iloveppe.dev/">
+					<a class="top-nav-link" href="<?php ilppe_lang_link('//blog.iloveppe.dev/', null) ?>">
 						<?php _e('Blog', 'ilppe') ?><br />
 						<span class="icon-file"></span>
 					</a>
@@ -40,12 +40,12 @@
 				<li class="top-nav-item">
 					<ul class="lang-select">
 						<li class="lang-select-item">
-							<a href="<?php ilppe_lang_link('zh') ?>" title="看中文版" class="lang-link <?php ilppe_is_current_lang('zh') ?>">
+							<a href="<?php ilppe_lang_link(null, 'zh') ?>" title="看中文版" class="lang-link <?php ilppe_is_current_lang('zh') ?>"  hreflang="zh">
 								汉
 							</a>
 						</li>
 						<li class="lang-select-item">
-							<a href="<?php ilppe_lang_link('en') ?>" title="View in English" class="lang-link <?php ilppe_is_current_lang('en') ?>">
+							<a href="<?php ilppe_lang_link(null, 'en') ?>" title="View in English" class="lang-link <?php ilppe_is_current_lang('en') ?>"  hreflang="en">
 								En
 							</a>
 						</li>

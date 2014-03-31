@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> @yield('title', 'I Love PPE') </title>
 
-    {{ AssetHelper::stylesheet('iloveppe.min.css') }}
+    {{ Asset::stylesheet('iloveppe.min.css') }}
 
   </head>
   <body>
@@ -17,6 +17,6 @@
       @yield('content')
     </div>
 
-    {{ AssetHelper::script('iloveppe.min.js') }}
+    {{ Asset::script('iloveppe.min.js') }}
   </body>
 </html>
