@@ -1,5 +1,7 @@
 <?php
 
+$ini = parse_ini_file(base_path() . '/config.ini');
+
 return array(
 
 	/*
@@ -13,7 +15,7 @@ return array(
 	|
 	*/
 
-	'debug' => false,
+	'debug' => true,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -27,6 +29,7 @@ return array(
 	*/
 
 	'url' => 'http://www.iloveppe.com',
+	'static_url' => 'http://static.iloveppe.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,7 +68,7 @@ return array(
 	|
 	*/
 
-	'key' => 'YourSecretKey!!!',
+	'key' => $ini['encryption_key'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -108,7 +111,8 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
         'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
-        'ILovePPE\ILovePPEServiceProvider'
+        'ILovePPE\ILovePPEServiceProvider',
+        'Greggilbert\Recaptcha\RecaptchaServiceProvider',
 
 	),
 

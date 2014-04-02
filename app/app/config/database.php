@@ -1,5 +1,7 @@
 <?php
 
+$ini = parse_ini_file(base_path() . '/config.ini');
+
 return array(
 
 	/*
@@ -55,9 +57,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'iloveppe',
-			'username'  => 'iloveppe',
-			'password'  => 'nWnsJ9e9XXBNVbXJ',
+			'database'  => $ini['db_name'],
+			'username'  => $ini['db_user'],
+			'password'  => $ini['db_pw'],
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

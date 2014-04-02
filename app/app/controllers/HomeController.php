@@ -22,6 +22,9 @@ class HomeController extends BaseController {
 
 	public function getAboutUs()
 	{
+		if (App::getLocale() == 'zh') {
+			return View::make('pages.guanyu-women');
+		}
 		return View::make('pages.about-us');
 	}
 

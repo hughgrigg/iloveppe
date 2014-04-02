@@ -1,0 +1,18 @@
+@import '../includes/_settings';
+
+.small-form {
+	background-color: $brandColour;
+	padding: 1em;
+	border-radius: $innerRadius;
+	max-width: 500px;
+	box-shadow: $shallowShadow;
+	label {
+		color: #fff;
+	}
+	button {
+		background-color: darken($brandColour, 20%);
+		box-shadow: $shallowShadow;
+		border-radius: $innerRadius;
+		margin: auto;
+	}
+}

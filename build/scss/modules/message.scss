@@ -1,0 +1,15 @@
+.message {
+	display: block;
+	margin: 1em;
+	padding: 1em;
+	border-radius: $innerRadius;
+	max-width: 500px;
+	box-shadow: $shallowShadow;
+	color: #fff;
+	&.error {
+		background-color: lighten(red, 10%);
+	}
+	&.success {
+		background-color: lighten(green, 10%);	
+	}
+}

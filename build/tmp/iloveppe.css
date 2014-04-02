@@ -1,7 +1,8 @@
 html {
   font-size: 18px;
   color: #333333;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif; }
 
 body {
   background-color: #f1f1f1;
@@ -14,13 +15,16 @@ h1, h2, h3, h4, h5, h6 {
 a {
   transition: all 0.5s ease; }
 
+p, li, label {
+  font-family: "Source Sans Pro", sans-serif; }
+
 .padless {
   padding: 0; }
 
 .container {
   z-index: 1;
   background-color: #fff;
-  padding: 1em 2em;
+  padding: 1em 1em;
   position: relative; }
   @media (min-width: 40.063em) {
     .container {
@@ -69,6 +73,12 @@ a {
   @media (min-width: 40.063em) {
     .top-nav-item:first-child .top-nav-link {
       border-left: none; } }
+  @media only screen and (max-width: 40em) {
+    .top-nav-item:last-of-type {
+      width: 100%;
+      margin-top: 0.5em; }
+    .top-nav-item .site-logo {
+      display: none; } }
 
 .top-nav-link {
   display: block;
@@ -279,6 +289,71 @@ article {
   color: #fff; }
   .dark-bg h1, .dark-bg h2, .dark-bg h3, .dark-bg h4, .dark-bg h5, .dark-bg h6, .dark-bg p, .dark-bg li, .dark-bg label {
     color: #fff; }
+
+.feature-item-block {
+  display: block;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  transition: all 0.5s ease;
+  border-radius: 9px; }
+  .feature-item-block:hover {
+    background-color: #e73434;
+    color: #fff; }
+    .feature-item-block:hover > .feature-icon {
+      background-color: #fff;
+      color: #e73434; }
+
+.feature-icon {
+  font-size: 64px;
+  border-radius: 50%;
+  padding: 32px;
+  width: 128px;
+  height: 128px;
+  margin: 12px auto;
+  background-color: #e73434;
+  color: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  display: block;
+  transition: all 0.5s ease; }
+  .feature-icon.small {
+    font-size: 24px;
+    padding: 12px;
+    width: 48px;
+    height: 48px; }
+
+.feature-item-text {
+  display: block; }
+
+.small-form {
+  background-color: #e73434;
+  padding: 1em;
+  border-radius: 9px;
+  max-width: 500px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); }
+  .small-form label {
+    color: #fff; }
+  .small-form button {
+    background-color: #a21313;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 9px;
+    margin: auto; }
+
+.recaptcha {
+  margin-bottom: 1em; }
+
+.message {
+  display: block;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 9px;
+  max-width: 500px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #fff; }
+  .message.error {
+    background-color: #ff3333; }
+  .message.success {
+    background-color: #00b300; }
 
 button, .button {
   background-color: #e73434; }

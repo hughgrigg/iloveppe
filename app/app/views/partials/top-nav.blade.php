@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="top-nav-back hide-for-small">
+<div class="top-nav-back">
 	<nav class="row">
 		<div class="medium-12 columns padless">
 			<ul class="medium-block-grid-5 small-block-grid-2 top-nav">

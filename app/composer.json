@@ -8,7 +8,8 @@
                 "fzaninotto/faker": "dev-master",
                 "way/generators": "dev-master",
                 "mcamara/laravel-localization": "0.13.*",
-                "waavi/translation": "*"
+                "waavi/translation": "*",
+                "greggilbert/recaptcha": "dev-master"
 	},
 	"repositories": [{
 		"type": "vcs",

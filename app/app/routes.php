@@ -20,6 +20,7 @@ Route::group(
 		]
 	],
 	function() {
+		Route::controller('contact', 'ContactController');
 		Route::controller('/', 'HomeController');
 	}
 );

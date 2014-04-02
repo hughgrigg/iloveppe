@@ -127,12 +127,26 @@ module.exports = function(grunt){
             }
         },
 
+        imagemin: {
+            dynamic: { 
+                options: {
+                    pngquant: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: 'build/img/',
+                    src: ['**/*.{png,jpg,gif}'],
+                    dest: 'static/img'
+                }]
+            }
+        }
+
     });
 
     grunt.registerTask('buildcss', ['sass', 'cssmin']);
     grunt.registerTask('buildjs', ['uglify']);
     grunt.registerTask('lang', ['pot', 'po2mo', 'copy']);
-    grunt.registerTask('heave', ['buildjs', 'buildcss', 'lang']);
+    grunt.registerTask('heave', ['buildjs', 'buildcss', 'lang', 'imagemin']);
     grunt.registerTask('default', []);
 
 };

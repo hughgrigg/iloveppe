@@ -1,21 +1,15 @@
 <?php
 
 namespace ILovePPE\Helpers;
-use App;
+use Config;
 
 class AssetHelper
 {
 	protected $staticDomain;
 
 	public function __construct() {
-		// This needs to be changed allow App dependency injection
-		// Also should use app config domains based on environment, not hard-code them
-		// Set static domain based on environment
-		if (App::environment('local')) {
-			$this->staticDomain = '//static.iloveppe.dev/';
-		} else {
-			$this->staticDomain = '//static.iloveppe.com/';
-		}
+		// This needs to be changed allow Config dependency injection
+		$this->staticDomain = Config::get('app.static_url');
 	}
 
 	/**

@@ -3,7 +3,7 @@
 .container {
 	z-index: 1;
 	background-color: #fff;
-	padding: 1em 2em;
+	padding: 1em 1em;
 	position: relative;
 	@include breakpoint(medium-up) {
 		padding: 2em;

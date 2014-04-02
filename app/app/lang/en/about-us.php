@@ -1,8 +1,13 @@
 <?php
 
 return array(
-	'title' => 'About I ❤ PPE™',
-	'intro' => 'I ❤ PPE™ is an information and consulting service for the PPE industry in Mainland China. We offer a wide range of customised services for PPE and related industries in Mainland China, including:',
-	'list' => '<li>PPE Supplier Sourcing - identify and research potential PPE suppliers.</li><li>Supplier Risk Analysis - perform due diligence on potential or existing suppliers and partners.</li><li>Quality Assurance Audits - determine if your supplier is a quality manufacturer.</li><li>Cargo Inspections - check your goods before they arrive.</li><li>Quality Control Consulting - develop your China QC management program.</li><li>Tailored On-Site Auditing - address your particular concerns about quality, environment, CSR and compliance .</li><li>Expo Representation - be seen at China&#8217;s massive PPE trade shows.</li><li>Product Testing - locate Chinese testing laboratories accredited to test your PPE.</li><li>Supplier Management - we can help liaise with and manage your suppliers.</li><li>Market Knowledge - understand and develop opportunities in China&#8217;s huge PPE market.</li><li>Product Certification - we can help you certify your PPE product to the standard you require.</li><li>Customised Consulting - ask us today.</li>',
-	'welcome-contact' => 'Should your business need any assistance we would welcome the opportunity to discuss further with you. Email us today at <a href="mailto:info@iloveppe.com">info@iloveppe.com</a>.',
+	'title' => 'About I ❤ PPE',
+	'intro' => 'I ❤ PPE™ is an information and consulting service for the PPE industry in Mainland China. We offer a wide range of customised services for PPE and related industries in Mainland China.',
+	'identify-research' => 'PPE Supplier Sourcing. Identify and research potential PPE suppliers.',
+	'market-knowledge' => 'Market Knowledge. Understand and develop opportunities in China&apos;s huge PPE market.',
+	'testing' => 'Product Testing. Locate Chinese testing laboratories accredited to test your PPE.',
+	'quality-assurance' => 'Quality Assurance Audits. Determine if your supplier is a quality manufacturer.',
+	'expo-representation' => 'Expo Representation. Be seen at China&apos;s massive PPE trade shows.',
+	'product-certification' => 'Product Certification. We can help you certify your PPE product to the standard you require.',
+	'close' => 'If you want to succeed in the China PPE industry, or benefit from this expanding market, contact us to see how we can help you.'
 );

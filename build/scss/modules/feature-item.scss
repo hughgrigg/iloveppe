@@ -1,0 +1,43 @@
+@import '../includes/_settings';
+
+.feature-item-block {
+	display: block;
+	margin: auto;
+	padding: 1em;
+	text-align: center;
+	transition: $allEase;
+	border-radius: $innerRadius;
+	&:hover {
+		background-color: $brandColour;
+		color: #fff;
+		// cursor: pointer;
+		> .feature-icon {
+			background-color: #fff;
+			color: $brandColour;
+		}
+	}
+}
+
+.feature-icon {
+	font-size: 64px;
+	border-radius: 50%;
+	padding: 32px;
+	width: 128px;
+	height: 128px;
+	margin: 12px auto;
+	background-color: $brandColour;
+	color: #fff;
+	box-shadow: $shallowShadow;
+	display: block;
+	transition: $allEase;
+	&.small {
+		font-size: 24px;
+		padding: 12px;
+		width: 48px;
+		height: 48px;
+	}
+}
+
+.feature-item-text {
+	display: block;
+}

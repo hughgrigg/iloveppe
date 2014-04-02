@@ -1,5 +1,7 @@
 <?php
 
+$ini = parse_ini_file(base_path() . '/config.ini');
+
 return array(
 
 	/*
@@ -28,7 +30,7 @@ return array(
 	|
 	*/
 
-	'host' => 'smtp.mailgun.org',
+	'host' => 'smtp.mandrillapp.com',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -80,7 +82,7 @@ return array(
 	|
 	*/
 
-	'username' => null,
+	'username' => $ini['smtp_username'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -93,7 +95,7 @@ return array(
 	|
 	*/
 
-	'password' => null,
+	'password' => $ini['smtp_password'],
 
 	/*
 	|--------------------------------------------------------------------------

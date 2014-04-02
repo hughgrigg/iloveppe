@@ -11,6 +11,7 @@
     "grunt-pot": "*",
     "grunt-contrib-copy": "*",
     "grunt-text-replace": "*",
-    "matchdep": "*"
+    "matchdep": "*",
+    "grunt-contrib-imagemin": "^0.6.1"
   }
 }
