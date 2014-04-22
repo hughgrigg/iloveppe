@@ -17,3 +17,9 @@
 	font-size: 1.5em;
 	color: lighten($textColour, 20%);
 }
+
+html[lang="zh"] {
+	.site-description {
+		font-size: larger;
+	}
+}

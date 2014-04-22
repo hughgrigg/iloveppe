@@ -37,9 +37,9 @@ msgstr "关于我们"
 msgid "Contact Us"
 msgstr "联系我们"
 
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:34
-msgid "Blog"
-msgstr "博客"
+#: app/public/kb/wp-content/themes/iloveppe/partials/top-nav.php:36
+msgid "Knowledge Base"
+msgstr "知识库"
 
 #: blog/wordpress/wp-content/themes/iloveppe/header.php:45
 #: blog/wordpress/wp-content/themes/iloveppe/header.php:46

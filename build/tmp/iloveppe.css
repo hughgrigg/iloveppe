@@ -58,6 +58,9 @@ p, li, label {
   font-size: 1.5em;
   color: #666666; }
 
+html[lang="zh"] .site-description {
+  font-size: larger; }
+
 .top-nav-back {
   background-color: #e73434;
   border-bottom: 10px solid #b91616;
@@ -108,12 +111,6 @@ article {
   max-width: 38em;
   margin: auto; }
 
-@media (min-width: 64.063em) {
-  .sidebar {
-    position: absolute;
-    right: 0;
-    padding-right: 0; } }
-
 .sidebar-items {
   list-style-type: none;
   margin: 0; }
@@ -135,7 +132,7 @@ article {
   @media (min-width: 64.063em) {
     .widget-title {
       border-radius: 9px 9px 0 9px;
-      margin-right: -1.68em;
+      margin-right: -3.58em;
       margin-left: -1em; }
       .widget-title:before {
         content: "";

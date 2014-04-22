@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: iloveppe-blog 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-04-02 11:15+0800\n"
+"POT-Creation-Date: 2014-04-22 16:53+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,113 +18,113 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: blog/wordpress/wp-content/themes/iloveppe/comments.php:27
+#: app/public/kb/wp-content/themes/iloveppe/comments.php:27
 #, php-format
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/comments.php:34
-#: blog/wordpress/wp-content/themes/iloveppe/comments.php:52
+#: app/public/kb/wp-content/themes/iloveppe/comments.php:34
+#: app/public/kb/wp-content/themes/iloveppe/comments.php:52
 msgid "Comment navigation"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/comments.php:35
-#: blog/wordpress/wp-content/themes/iloveppe/comments.php:53
+#: app/public/kb/wp-content/themes/iloveppe/comments.php:35
+#: app/public/kb/wp-content/themes/iloveppe/comments.php:53
 msgid "&larr; Older Comments"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/comments.php:36
-#: blog/wordpress/wp-content/themes/iloveppe/comments.php:54
+#: app/public/kb/wp-content/themes/iloveppe/comments.php:36
+#: app/public/kb/wp-content/themes/iloveppe/comments.php:54
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/comments.php:59
+#: app/public/kb/wp-content/themes/iloveppe/comments.php:59
 msgid "Comments are closed."
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/content.php:21
+#: app/public/kb/wp-content/themes/iloveppe/content.php:21
 msgid "Keep Reading"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/content.php:45
+#: app/public/kb/wp-content/themes/iloveppe/content.php:45
 msgid "Tags"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:16
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:17
+#: app/public/kb/wp-content/themes/iloveppe/header.php:12
+#: app/public/kb/wp-content/themes/iloveppe/header.php:13
 msgid "I Love PPE"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:21
-#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:36
-msgid "Blog"
+#: app/public/kb/wp-content/themes/iloveppe/header.php:17
+#: app/public/kb/wp-content/themes/iloveppe/partials/top-nav.php:36
+msgid "Knowledge Base"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/header.php:26
+#: app/public/kb/wp-content/themes/iloveppe/header.php:22
 msgid "China PPE Industry Specialists"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:14
+#: app/public/kb/wp-content/themes/iloveppe/index.php:14
 #, php-format
 msgid "Articles in the &lsquo;%s&rsquo; Category"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:16
+#: app/public/kb/wp-content/themes/iloveppe/index.php:16
 #, php-format
 msgid "Articles Tagged with &lsquo;%s&rsquo;"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:18
+#: app/public/kb/wp-content/themes/iloveppe/index.php:18
 #, php-format
 msgid "Articles Published on the<br />%s"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:18
+#: app/public/kb/wp-content/themes/iloveppe/index.php:18
 msgid "jS \\o\\f F Y"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:20
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:22
+#: app/public/kb/wp-content/themes/iloveppe/index.php:20
+#: app/public/kb/wp-content/themes/iloveppe/index.php:22
 #, php-format
 msgid "Articles Published in<br />%s"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:20
+#: app/public/kb/wp-content/themes/iloveppe/index.php:20
 msgid "F Y"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:22
+#: app/public/kb/wp-content/themes/iloveppe/index.php:22
 msgid "Y"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:24
-#: blog/wordpress/wp-content/themes/iloveppe/widgets/recent-posts.php:8
+#: app/public/kb/wp-content/themes/iloveppe/index.php:24
+#: app/public/kb/wp-content/themes/iloveppe/widgets/recent-posts.php:8
 msgid "Recent Posts"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:40
-#: blog/wordpress/wp-content/themes/iloveppe/index.php:92
+#: app/public/kb/wp-content/themes/iloveppe/index.php:40
+#: app/public/kb/wp-content/themes/iloveppe/index.php:92
 msgid "Page"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/partials/byline.php:5
+#: app/public/kb/wp-content/themes/iloveppe/partials/byline.php:5
 msgid "By"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/partials/byline.php:8
+#: app/public/kb/wp-content/themes/iloveppe/partials/byline.php:8
 msgid "Published"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:18
+#: app/public/kb/wp-content/themes/iloveppe/partials/top-nav.php:18
 msgid "Home"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:24
+#: app/public/kb/wp-content/themes/iloveppe/partials/top-nav.php:24
 msgid "About Us"
 msgstr ""
 
-#: blog/wordpress/wp-content/themes/iloveppe/partials/top-nav.php:30
+#: app/public/kb/wp-content/themes/iloveppe/partials/top-nav.php:30
 msgid "Contact Us"
 msgstr ""

@@ -43,7 +43,7 @@ window.onload = function() {
             share: {
                 googlePlus: true
             },
-            urlCurl: '/wp-content/themes/iloveppe/vendor/sharrre.php',
+            urlCurl: '/vendor/sharrre.php',
             template: '<a class="box" href="#"><span class="share"><span class="icon-googleplus"></span> <span class="text">+1</span></span><span class="count" href="#">{total}</span></a>',
             enableHover: false,
             enableTracking: true,

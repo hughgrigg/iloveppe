@@ -1,11 +1,3 @@
-.sidebar {
-	@include breakpoint(large-up) {
-		position: absolute;
-		right: 0;
-		padding-right: 0;
-	}
-}
-
 .sidebar-items {
 	list-style-type: none;
 	margin: 0;
@@ -28,7 +20,7 @@
 	position: relative;
 	@include breakpoint(large-up) {
 		border-radius: $innerRadius $innerRadius 0 $innerRadius;
-		margin-right: -1.68em;
+		margin-right: -3.58em;
 		margin-left: -1em;
 		&:before {
 			content: "";

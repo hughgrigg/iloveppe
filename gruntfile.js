@@ -47,9 +47,9 @@ module.exports = function(grunt){
                         'build/js/foundation/foundation.js',
                         'build/sharrre/jquery.sharrre.js',
                     ],
-                    'static/js/iloveppe_blog.min.js': [
+                    'static/js/iloveppe_kb.min.js': [
                         'build/tmp/iloveppe_common.min.js',
-                        'build/js/ilppe_blog.js'
+                        'build/js/ilppe_kb.js'
                     ],
                     'static/js/iloveppe.min.js': [
                         'build/tmp/iloveppe_common.min.js',
@@ -91,7 +91,7 @@ module.exports = function(grunt){
                 ],
             },
             files:{
-                src:  [ 'blog/wordpress/wp-content/themes/iloveppe/**/*.php' ], //Parse all php files in wordpress theme
+                src:  [ 'app/public/kb/wp-content/themes/iloveppe/**/*.php' ], //Parse all php files in wordpress theme
                 expand: true,
             }
         },
@@ -103,7 +103,7 @@ module.exports = function(grunt){
                     expand: true,
                     cwd: 'build/languages/mo/',
                     src: '**/*.mo',
-                    dest: 'blog/wordpress/wp-content/languages/themes/',
+                    dest: 'app/public/kb/wp-content/themes/iloveppe/languages/',
                     filter: 'isFile'
                 }]
             },
@@ -111,7 +111,7 @@ module.exports = function(grunt){
                 files: [
                     {
                         src: 'build/sharrre/sharrre.php',
-                        dest: 'blog/wordpress/wp-content/themes/iloveppe/vendor/sharrre.php'
+                        dest: 'app/public/kb/wp-content/themes/iloveppe/vendor/sharrre.php'
                     },
                     {
                         src: 'build/sharrre/sharrre.php',
