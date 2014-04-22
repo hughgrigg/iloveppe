@@ -100,6 +100,10 @@ return array(
 	|
 	*/
 
-	'attributes' => array(),
+	'attributes' => array(
+		'email' => 'email address',
+        'message' => 'message',
+        'recaptcha_response_field' => 'CAPTCHA'
+	),
 
 );

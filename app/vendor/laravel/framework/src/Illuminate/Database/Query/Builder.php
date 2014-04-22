@@ -480,10 +480,9 @@ class Builder {
 	 *
 	 * @param  string  $column
 	 * @param  array   $values
-	 * @param  bool  $not
 	 * @return \Illuminate\Database\Query\Builder|static
 	 */
-	public function orWhereBetween($column, array $values, $not = false)
+	public function orWhereBetween($column, array $values)
 	{
 		return $this->whereBetween($column, $values, 'or');
 	}
@@ -1587,7 +1586,7 @@ class Builder {
 	 */
 	public function count($column = '*')
 	{
-		return $this->aggregate(__FUNCTION__, array($column));
+		return (int) $this->aggregate(__FUNCTION__, array($column));
 	}
 
 	/**
@@ -1620,7 +1619,9 @@ class Builder {
 	 */
 	public function sum($column)
 	{
-		return $this->aggregate(__FUNCTION__, array($column));
+		$result = $this->aggregate(__FUNCTION__, array($column));
+
+		return $result ?: 0;
 	}
 
 	/**
@@ -1654,7 +1655,7 @@ class Builder {
 
 		if (isset($results[0]))
 		{
-			$result = (array) $results[0];
+			$result = array_change_key_case((array) $results[0]);
 
 			return $result['aggregate'];
 		}

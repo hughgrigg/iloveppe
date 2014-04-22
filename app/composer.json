@@ -9,12 +9,25 @@
                 "way/generators": "dev-master",
                 "mcamara/laravel-localization": "0.13.*",
                 "waavi/translation": "*",
-                "greggilbert/recaptcha": "dev-master"
+                "greggilbert/recaptcha": "dev-master",
+                "phpunit/phpunit": "*",
+                "phpunit/php-invoker": "*",
+                "johnpbloch/wordpress": "dev-master",
+                "wpackagist-plugin/akismet":"dev-trunk",
+		        "wpackagist-plugin/captcha":">=3.9",
+        		"wpackagist-theme/hueman":"*",
+                "rtablada/package-installer": "dev-master"
 	},
-	"repositories": [{
-		"type": "vcs",
-		"url":  "git@github.com:Waavi/translation.git"
-	}],
+	"repositories": [
+		{
+			"type": "vcs",
+			"url":  "git@github.com:Waavi/translation.git"
+		},
+		{
+            "type":"composer",
+            "url":"http://wpackagist.org"
+        }
+	],
 	"autoload": {
 		"classmap": [
 			"app/commands",

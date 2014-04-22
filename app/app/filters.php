@@ -19,7 +19,26 @@ App::before(function($request)
 
 App::after(function($request, $response)
 {
-	//
+	// HTML Minification
+	if(true)
+	{
+		if($response instanceof Illuminate\Http\Response)
+		{
+			$output = $response->getOriginalContent();
+			
+			$filters = array(
+				// '/<!--([^\[|(<!)].*)/'		=> '', // Remove HTML Comments (breaks with HTML5 Boilerplate)
+				'/(?<!\S)\/\/\s*[^\r\n]*/'	=> '', // Remove comments in the form /* */
+				'/>\s+</'			=> '><', // Remove whitespace between tags
+				'/\s+/'			=> ' ', // Shorten multiple whitespace
+				'/(\r?\n)/'			=> '', // Collapse new lines
+			);
+			$brand = Config::get('app.ini.ascii_branding');
+			$minified = preg_replace(array_keys($filters), array_values($filters), $output);
+			$output = $minified;
+			$response->setContent($output);
+		}
+	}
 });
 
 /*

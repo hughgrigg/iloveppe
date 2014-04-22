@@ -20,6 +20,9 @@ Route::group(
 		]
 	],
 	function() {
+		// Knowledge base to WordPress
+		Route::any('knowledge-base/{path?}', 'WordpressController@load')->where('path', '.+');
+		// Controller routes
 		Route::controller('contact', 'ContactController');
 		Route::controller('/', 'HomeController');
 	}

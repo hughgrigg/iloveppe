@@ -15,7 +15,7 @@ return array(
 	|
 	*/
 
-	'debug' => true,
+	'debug' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -70,6 +70,12 @@ return array(
 
 	'key' => $ini['encryption_key'],
 
+	// Save ini file values in this array
+	'ini' => $ini,
+
+	// Path to Wordpress Install
+	'wp_path' => base_path() . '/wordpress',
+
 	/*
 	|--------------------------------------------------------------------------
 	| Autoloaded Service Providers
@@ -105,7 +111,7 @@ return array(
 		'Illuminate\Auth\Reminders\ReminderServiceProvider',
 		'Illuminate\Database\SeedServiceProvider',
 		'Illuminate\Session\SessionServiceProvider',
-		'Waavi\Translation\TranslationServiceProvider', // Illuminate Translation replaced with Waavi Translation
+		'Waavi\Translation\TranslationServiceProvider', // Illuminate Translation ( 'Illuminate\Translation\TranslationServiceProvider' ) replaced with Waavi Translation
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
@@ -113,7 +119,7 @@ return array(
         'Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider',
         'ILovePPE\ILovePPEServiceProvider',
         'Greggilbert\Recaptcha\RecaptchaServiceProvider',
-
+        'Rtablada\PackageInstaller\PackageInstallerServiceProvider',
 	),
 
 	/*

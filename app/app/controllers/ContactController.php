@@ -19,14 +19,17 @@ class ContactController extends BaseController
 		$validator = Validator::make($input, $rules);
 		if ($validator->passes()) {
 			$emailContent = [
-				'content' => $input['message'],
-				'emailAddress' => $input['email']
+				'content' => Input::get('message'),
+				'emailAddress' => Input::get('email')
 			];
-			Mail::send('emails.contact-form-message', $emailContent, function($message)
+			if (Mail::send('emails.contact-form-message', $emailContent, function($message)
 			{
-    			$message->to('hugh@senlinx.com', 'Hugh Grigg')->subject('I Love PPE Contact Form Message');
-			});
-			return Redirect::action('HomeController@getContactUs')->with('success', 'messages.success.message-sent');
+    			$message->from(Input::get('email'), 'I Love PPE Contact Form');
+    			$message->to('hugh@senlinx.com', 'Hugh Grigg')->subject('Contact form message from '.Input::get('email'));
+			}))
+			{
+				return Redirect::action('HomeController@getContactUs')->with('success', 'messages.success.message-sent');
+			}
 		}
 		return Redirect::action('HomeController@getContactUs')->withInput()->withErrors($validator);
 	}
